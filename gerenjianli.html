@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人简历</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+        body {
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        .resume {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #333;
+        }
+        .header-info {
+            text-align: left;
+        }
+        .header h1 {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .header .info {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.5;
+        }
+        .avatar {
+            width: 120px;
+            height: 160px;
+            border: 1px solid #eee;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+        }
+        .section {
+            margin-bottom: 25px;
+        }
+        .section h2 {
+            font-size: 20px;
+            color: #333;
+            border-left: 4px solid #2c85ff;
+            padding-left: 10px;
+            margin-bottom: 15px;
+        }
+        .content {
+            line-height: 1.8;
+            color: #444;
+            font-size: 15px;
+        }
+        .content ul {
+            padding-left: 20px;
+            margin-bottom: 10px;
+        }
+        .content li {
+            margin-bottom: 8px;
+        }
+        .item {
+            margin-bottom: 18px;
+        }
+        .item .title {
+            font-weight: bold;
+            color: #333;
+            display: flex;
+            justify-content: space-between;
+        }
+        .item .subtitle {
+            color: #666;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .skill-tag {
+            background: #e8f3ff;
+            color: #2c85ff;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        @media (max-width: 768px) {
+            .resume {
+                padding: 20px;
+            }
+            .header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .header-info {
+                margin-bottom: 15px;
+            }
+            .header h1 {
+                font-size: 24px;
+            }
+            .section h2 {
+                font-size: 18px;
+            }
+            .content {
+                font-size: 14px;
+            }
+            .skills {
+                gap: 10px;
+            }
+            .avatar {
+                width: 100px;
+                height: 135px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume">
+        <div class="header">
+            <div class="header-info">
+                <h1>杨银志</h1>
+                <div class="info">
+                    联系电话：13095350229 | 邮箱：3343389457@qq.com | 地址：云南省昆明市
+                </div>
+            </div>
+            <div class="avatar">
+                <img src="D:\地理信息系统开发\20230456057_杨银志\个人简历\个人照.png" alt="个人照片">
+            </div>
+        </div>
+        <div class="section">
+            <h2>教育背景</h2>
+            <div class="content">
+                <div class="item">
+                    <div class="title">
+                        <span>西南林业大学 - 测绘工程专业（本科）</span>
+                        <span>2020.09 - 2024.06</span>
+                    </div>
+                    <div class="subtitle">GPA：*.*/4.0（专业前**%） | 职位：西南林业大学学生、共青团员、采编部部员</div>
+                    <p>核心课程：测绘程序设计、地理信息系统开发、GIS原理与应用、遥感技术与应用、地图学、测量学</p >
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h2>专业技能</h2>
+            <div class="content">
+                <div class="skills">
+                    <span class="skill-tag">ArcGIS Pro/ArcMap</span>
+                    <span class="skill-tag">ENVI</span>
+                    <span class="skill-tag">CASS</span>
+                    <span class="skill-tag">HTML/CSS/JavaScript</span>
+                    <span class="skill-tag">空间数据库（PostGIS）</span>
+                    <span class="skill-tag">Visual Studio</span>
+                    <span class="skill-tag">AutoCAD</span>
+                </div>
+                <p style="margin-top: 10px;">熟练运用GIS软件完成数据采集、编辑、分析及制图；掌握遥感影像预处理、分类与解译；能通过Python自动化处理GIS数据，具备基础网页开发能力。</p >
+            </div>
+        </div>
+        <div class="section">
+            <h2>项目与竞赛经历</h2>
+            <div class="content">
+                <div class="item">
+                    <div class="title">
+                        <span>2025年全国大学生测绘学科创新创业智能大赛</span>
+                        <span>2025.07.10</span>
+                    </div>
+                    <div class="subtitle">项目名称：基于空间大数据的农地经营权智慧管理系统 | 核心成员</div>
+                    <ul>
+                        <li>立足国家农业农村现代化发展战略需求</li>
+                        <li>以土地权属管理为核心，积极探索空间大数据等前沿数字技术的应用潜力</li>
+                        <li>构建“空间大数据 + 农地管理”的理论框架与技术体系</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <div class="title">
+                        <span>十四届全国GIS应用技能大赛</span>
+                        <span>2025.11.15</span>
+                    </div>
+                    <div class="subtitle">技术栈：ArcGISPro</div>
+                    <ul>
+                        <li>时空数据处理</li>
+                        <li>时空数据组织与管理</li>
+                        <li>地图制作与输出、常见空间分析</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <div class="title">
+                        <span>2025金砖大赛时空智能应用创新赛</span>
+                        <span>2025.12.06</span>
+                    </div>
+                    <div class="subtitle">技术栈：ArcGISPro</div>
+                    <ul>
+                        <li>Web GIS 基础知识、基本的 GIS 应用开发方法、应用 GIS 相关功能于相应的行业中解决实际问题</li>
+                        <li>时空数据处理、时空数据组织与管理、地图制作与输出、常见空间分析</li>
+                        <li>高级空间数据处理、数据库建库、三维数据处理与分析、影像数据管理与分析</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h2>实习经历</h2>
+            <div class="content">
+                <div class="item">
+                    <div class="title">
+                        <span>楚雄紫溪山</span>
+                        <span>2024.12 - 2025.01</span>
+                    </div>
+                    <ul>
+                        <li>掌握水准仪、经纬仪、全站仪、GNSS接收机等仪器的结构与功能</li>
+                        <li>闭合水准路线测量，计算闭合差并进行调整</li>
+                        <li>进行外业观测和内业计算，包括坐标计算与平差</li>
+                        <li>使用CAD进行数据处理和绘图</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+            <div class="content">
+                <div class="item">
+                    <div class="title">
+                        <span>玉溪江川西南林业大学实训基地</span>
+                        <span>2025.06 - 2025.07</span>
+                    </div>
+                    <ul>
+                        <li>掌握全站仪、水准仪、GNSS接收机等仪器的结构与功能</li>
+                        <li>使用GNSS接收机进行静态或动态测量</li>
+                        <li>使用南方CASS进行数据处理</li>
+                    </ul>
+                </div>
+            </div>
+        <div class="section">
+            <h2>自我评价</h2>
+            <div class="content">
+                <p>GIS专业基础扎实，熟悉核心软件操作与数据处理流程，具备竞赛与项目实战经验；学习能力强，能快速掌握新工具与技术，注重细节与效率；责任心强，具备良好的团队协作与沟通能力，热爱地理信息行业，期待相关岗位实践机会。</p >
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+</body>
+</html>
